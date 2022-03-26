@@ -50,6 +50,9 @@ section {
 footer {
     font-family: 'Poppins', sans-serif;
 }
+.project_img{
+    width: 340px;
+}
 
 
 
@@ -63,7 +66,9 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
-
+.about .about-content a{
+    text-decoration: none;
+}
 section .title {
     position: relative;
     text-align: center;
@@ -84,7 +89,9 @@ section .title::before {
     background: #111;
     transform: translateX(-50%);
 }
-
+.skills .skills-content a{
+    text-decoration: none;
+}
 section .title::after {
     position: absolute;
     bottom: -8px;
@@ -124,6 +131,7 @@ section .title::after {
     color: #fff;
     font-size: 35px;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .navbar .logo a span {
@@ -163,6 +171,9 @@ section .title::after {
     font-size: 23px;
     cursor: pointer;
     display: none;
+}
+.menu a{
+    text-decoration: none;
 }
 
 .scroll-up-btn {
@@ -306,6 +317,9 @@ section .title::after {
     color: crimson;
     background: none;
 }
+
+
+
 
 /* services section styling */
 .services,
@@ -700,11 +714,19 @@ footer span a:hover {
 
 /* --------Headline Start ---------*/
 /* social icom head-----*/
-.amnei {
+.my_img_wrap {
     float: right;
     padding-left: 19px;
     padding-top: 100px;
     margin-right: 164px;
+}
+.my_img{
+    width: 350px;
+    height: 350px;
+    float: left;
+    border:5px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px 2px #ccc;
 }
 
 .stay {
@@ -722,6 +744,9 @@ footer span a:hover {
     transition: all 1s ease-in;
 
 }
+.stay a{
+    text-decoration: none;
+}
 
 .stay:hover {
     border: 1px solid #dc143c;
@@ -729,6 +754,7 @@ footer span a:hover {
     color: #dc143c;
     transition: background-color 700ms linear;
     transition: all 1s ease-in-out;
+    
 
 
 }
@@ -841,7 +867,7 @@ footer span a:hover {
 }
 
 .skill_level_html {
-    width: 80%;
+    width: 90%;
     padding-left: 17px;
     text-align: right;
     color: black;
@@ -867,7 +893,7 @@ footer span a:hover {
 }
 
 .skill_level_css {
-    width: 70%;
+    width: 75%;
     padding-left: 17px;
     text-align: right;
     color: black;
@@ -889,7 +915,7 @@ footer span a:hover {
 }
 
 .skill_level_script {
-    width: 50%;
+    width: 70%;
     padding-left: 17px;
     text-align: right;
     color: black;
@@ -910,7 +936,7 @@ footer span a:hover {
 }
 
 .skill_level_jquery {
-    width: 50%;
+    width: 70%;
     padding-left: 17px;
     text-align: right;
     color: black;
@@ -931,7 +957,7 @@ footer span a:hover {
 }
 
 .skill_level_bootstrap {
-    width: 75%;
+    width: 85%;
     padding-left: 17px;
     text-align: right;
     color: black;
@@ -952,7 +978,7 @@ footer span a:hover {
 }
 
 .skill_level_php {
-    width: 70%;
+    width: 80%;
     padding-left: 17px;
     text-align: right;
     color: black;
@@ -973,7 +999,7 @@ footer span a:hover {
 }
 
 .skill_level_laravel {
-    width: 65%;
+    width: 80%;
     padding-left: 17px;
     text-align: right;
     color: black;
@@ -1057,12 +1083,13 @@ footer span a:hover {
 
 
     height: 310px;
+    padding-right: 10px;
 }
 
-.card-box:hover .user-pic {
+/* .card-box:hover .user-pic {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
-}
+} */
 
 .card-box {
     padding: 15px;
@@ -1076,6 +1103,8 @@ footer span a:hover {
 
 .card-box:hover {
     border: 1px solid #007bff;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
 }
 
 .card-box p {
@@ -1105,96 +1134,9 @@ footer span a:hover {
 
 }
 
-/* .contact_wrap:hover {
-    transition: 1s ease-in-out;
-    background-color: red;
-
-} */
-
-.contact_container {
-    width: 34%;
-    margin: auto;
-    transition: 1s ease-in;
-    transition: 1s ease-in-out;
+/
 
 
-}
-
-.contact_image {
-
-
-    padding: 15px;
-    background-color: #fdfdfd;
-    margin: 20px 0px;
-    border-radius: 10px;
-
-    box-shadow: 0px 0px 8px 0px #d4d4d4;
-    transition: 0.5s;
-
-    transition: 0.5s;
-    border-left: 3px solid #ddd;
-    border-right: 3px solid #ddd;
-    /* 
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    border-radius: 100%;
-    margin: 20px auto 20px;
-    border-left: 3px solid #ddd;
-    border-right: 3px solid #ddd;
-    border-top: 3px solid #007bff;
-    border-bottom: 3px solid #007bff;
-    transform: rotate(-30deg);
-    transition: 0.5s; */
-}
-
-.contact_image:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
-    transform: rotate(-30deg);
-
-
-}
-
-.contact_item {}
-
-.contact_title {
-    margin-top: 100px;
-    text-transform: uppercase;
-    /* transition:all 4s ease-in-out;*/
-    margin-left: 100px
-}
-
-.contact_title h2 {
-    font-size: 16px;
-    margin-left: 10px;
-}
-
-form {
-    margin-top: 50px;
-    /*transition: all 4s ease-in-out;*/
-}
-
-.form_control {
-    width: 300px;
-    background: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid orange;
-    font-size: 18px;
-    margin-bottom: 16px;
-    margin-left: 100px;
-
-}
-
-/* form.submit {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 2px;
-    letter-spacing: 2px;
-    height: 50px;
-    margin-top: 20px;
-} */
 
 #btn {
     background: green;
@@ -1218,20 +1160,11 @@ form {
     text-align: center;
 }
 
-.contact_box {}
-
-.contact_box_img {
-    height: 150px;
-    width: 150px;
-
-    border-radius: 50%;
-    margin-left: 152px;
-    border: 5px solid #dc143c;
-}
 
 
 
-/* Contact */
+
+
 
 /* responsive media query start */
 @media (max-width: 1104px) {
@@ -1353,7 +1286,13 @@ form {
     .home .home-content .text-2 {
         font-size: 50px;
     }
-
+    .my_img{
+        display:none;
+    }
+    .project_img{
+        width: 261px;
+    }
+ 
     .home .home-content .text-3 {
         font-size: 27px;
     }
